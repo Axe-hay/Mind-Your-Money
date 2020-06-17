@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mind Your Money</string>
+    <string name="borrower_name">Borrower:</string>
+    <string name="payment_reason">Reason:</string>
+    <string name="date_and_time">Date and Time of Borrowing:</string>
+    <string name="days_since">Days since amount borrowed : %1$d</string>
+    <string name="payment_status">Payment Status: </string>
+    <string name="paid">Paid</string>
+    <string name="choose_debtor">select name from contacts</string>
+    <string name="message">Send a Message</string>
+    <string name="amount_borrowed">Amount \nBorrowed:</string>
+    <string name="amount">₹%1$d</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="amount_owed_item_item_header">Owes You:</string>
+    <string name="message_no_reason">Hi %1$s, you had borrowed ₹%2$s from me on %3$s at %4$s. Care to return it?</string>
+    <string name="message_reason">Hi %1$s, you had borrowed %2$s from me on %3$s at %4$s to pay for %5$s. \nCare to return it?</string>
+</resources>

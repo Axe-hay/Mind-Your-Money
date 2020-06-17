@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/external_layout"
+    android:focusableInTouchMode="true"
+    android:background="@color/negative_red">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/amount_borrowed"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/amount_borrowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:shadowColor="@color/black"
+                android:shadowDx="-5"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="@string/rupee_symbol"
+                android:maxLength="9"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:inputType="number">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    style="@style/details_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/borrower_name"></TextView>
+
+                <EditText
+                    android:id="@+id/borrower_name_edit_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editbox"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="textPersonName"
+                    android:layout_marginLeft="4dp">
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/select_name_from_contacts_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/choose_debtor"
+                android:background="@drawable/button_rounded_corners"></Button>
+
+            <TextView
+                style="@style/details_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/date_and_time"></TextView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/date_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="22dp"
+                    android:text="Date"></Button>
+
+                <Button
+                    android:id="@+id/time_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:text="Time"></Button>
+            </FrameLayout>
+
+            <TextView
+                style="@style/details_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/payment_reason"></TextView>
+
+            <EditText
+                android:id="@+id/reason_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:textSize="24sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/editbox"
+                android:gravity="top|start"
+                android:inputType="text"
+                android:padding="5dp">
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/paid_check"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:buttonTint="@color/checked_blue"
+                android:text="@string/paid"
+                android:checked="false"
+                style="@style/details_header">
+            </CheckBox>
+
+            <Button
+                android:id="@+id/send_message_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_rounded_corners">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

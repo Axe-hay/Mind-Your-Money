@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/borrower_items_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        tools:listitem="@layout/item_borrower" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_borrower_float_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_baseline_add">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</FrameLayout>
